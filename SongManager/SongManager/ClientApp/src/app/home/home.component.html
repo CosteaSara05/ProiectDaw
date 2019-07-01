@@ -1,0 +1,22 @@
+<div class="top-image">
+  <img src="https://www.brandcrowd.com/gallery/brands/pictures/picture15540681577672.jpg" />
+</div>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">SongName</th>
+      <th scope="col">Artist</th>
+      <th scope="col">Youtubelink</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let song of songs">
+      <td>{{song.songname}}</td>
+      <td>{{song.artist}}</td>
+      <td><a href="{{song.youtubelink}}">Youtube Link</a></td>
+      <td><button type="button" class="btn btn-danger" (click)="delete(song.id)">Delete</button></td>
+    </tr>
+
+  </tbody>
+</table>

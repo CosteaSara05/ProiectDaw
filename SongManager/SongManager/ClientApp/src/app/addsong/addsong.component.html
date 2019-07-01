@@ -1,0 +1,19 @@
+<form>
+  <div class="form-group">
+    <label>Song Name</label>
+    <input type="text" class="form-control" [(ngModel)]="song.songname" name="songname" #songName="ngModel">
+  </div>
+
+  <div class="form-group">
+    <label>Artist</label>
+    <input type="text" class="form-control" [(ngModel)]="song.artist" name="artist" #artist="ngModel">
+  </div>
+
+
+  <div class="form-group">
+    <label>Youtube Link</label>
+    <input type="text" class="form-control" [(ngModel)]="song.youtubelink" name="youtubelink" #youtubeLink="ngModel">
+  </div>
+
+  <button type="button" (click)="save()" class="btn btn-primary">Submit</button>
+</form>
